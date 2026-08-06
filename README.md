@@ -1,6 +1,6 @@
-# X Thread PDF Exporter
+# Twitter (X) Thread PDF Exporter
 
-A small Chrome extension that captures an entire X (Twitter) thread — including replies that only load as you scroll — and exports it to PDF.
+A small Chrome extension that captures an entire Twitter (X) thread — including replies that only load as you scroll — and exports it to PDF.
 
 X only renders replies into the DOM as you scroll, so a simple "print page" misses most of a long thread. This extension solves that by:
 
