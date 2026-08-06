@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "X Thread PDF Exporter",
+  "version": "2.1",
+  "description": "Captures all thread replies via X API interception and exports to PDF without missing unloaded posts.",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "action": {
+    "default_title": "Export Complete Thread to PDF"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://x.com/*", "https://twitter.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_start",
+      "world": "MAIN"
+    }
+  ]
+}
